@@ -15,3 +15,7 @@ export interface ProjectCardProps {
     category: string;
     technologies: string[];
 }
+
+export interface CategoryTabs {
+    text:string;
+}
