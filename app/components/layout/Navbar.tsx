@@ -43,8 +43,8 @@ const Navbar = () => {
       <div
         className={`lg:hidden transform transition-transform ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navItems.map((item, index) => (
+        <div className="px-2 pt-2 pb-5 space-y-1 sm:px-3">
+          {navItems.slice(0, navItems.length - 1).map((item, index) => (
             <Link
               key={index}
               href={`/${item.text.toLowerCase().replace(/ /g, '-')}`}
@@ -53,6 +53,7 @@ const Navbar = () => {
               {item.text}
             </Link>
           ))}
+          <button className='btn-yellow'>Contact Us</button>
         </div>
       </div>
     </nav>
