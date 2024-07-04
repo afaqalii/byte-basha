@@ -13,9 +13,30 @@ export interface ProjectCardProps {
     title: string;
     text: string;
     category: string;
+    index: number;
     technologies: string[];
 }
-
+export interface CategoryTabProps {
+    selectedCategory: string;
+    setSelectedCategory: (value: string) => void
+}
 export interface CategoryTabs {
-    text:string;
+    text: string;
+}
+export interface AnimationProps {
+    initial: {
+        opacity: number;
+        y: number;
+    };
+    whileInView: {
+        opacity: number;
+        y: number;
+    };
+    viewport: {
+        once: boolean;
+    };
+    transition: {
+        duration: number;
+        delay: number;
+    };
 }

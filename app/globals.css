@@ -1,4 +1,4 @@
-/* plys jakarta font */
+/* plus jakarta font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
@@ -6,9 +6,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --yellow-light: "#FFAE45";
+  --yellow-dark: "#E47302";
+  --black: "#000000";
 }
 
 * {
@@ -37,5 +37,5 @@
 @layer utilities {
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  } 
+  }
 }

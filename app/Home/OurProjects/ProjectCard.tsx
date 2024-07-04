@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
 import { ProjectCardProps } from "@/utils/types";
-
-const ProjectCard = ({ title, url, text, category, technologies }: ProjectCardProps) => {
+import { motion } from 'framer-motion'
+import { getStaggerAnimation } from '@/utils/animation';
+const ProjectCard = ({ title, index, url, text, technologies }: ProjectCardProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleReadMore = () => {
@@ -10,19 +11,23 @@ const ProjectCard = ({ title, url, text, category, technologies }: ProjectCardPr
     };
 
     return (
-        <div className="card max-w-96 shadow-xl p-4 max-[500px]:mx-auto">
-            <figure>
+        <motion.div
+            {...getStaggerAnimation(index)}
+            className="max-w-96 shadow-xl p-4 max-[500px]:mx-auto">
+            <figure className='h-[300px]'>
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
+                    className='w-full h-full object-cover'
+                    src={url}
+                    alt={title}
                 />
             </figure>
-            <div className="card-body">
+            <div>
                 <h2 className="h2 py-1">
                     {title}
                 </h2>
                 <p className={`text-gray-400 text-sm ${isExpanded ? '' : 'line-clamp-3'}`}>
-                    {text}</p>
+                    {text}
+                </p>
                 <button
                     className="text-yellowDark text-sm mt-2"
                     onClick={toggleReadMore}
@@ -37,7 +42,7 @@ const ProjectCard = ({ title, url, text, category, technologies }: ProjectCardPr
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

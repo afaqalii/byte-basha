@@ -1,0 +1,26 @@
+.fill-up-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fill-up-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFAE45;
+    transform: translateY(100%);
+    transition: transform 0.1s ease-in-out;
+    z-index: 0;
+  }
+  
+  .fill-up-btn:hover::before {
+    transform: translateY(0);
+  }
+
+  .fill-up-btn span {
+    position: relative;
+    z-index: 1;
+  }
