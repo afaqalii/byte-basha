@@ -1,13 +1,8 @@
-import Image from "next/image";
+import Hero from "./Home/Hero";
 
 export default function Home() {
   return (
-    <Image
-      src="/assets/logo.jpg"
-      alt="Logo"
-      width={400}
-      height={400}
-      priority
-    />
-  );
+    <>
+      <Hero />
+    </>);
 }
