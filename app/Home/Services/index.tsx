@@ -1,6 +1,7 @@
 import Title from '@/app/components/ui/Title'
 import { servicesTabsArray } from '@/utils/constants'
 import ServiceContainer from './ServiceContainer'
+import "./services.css"
 
 const Services = () => {
     return (

@@ -7,10 +7,11 @@ import "./project.css";
 import { projects } from "@/utils/constants";
 
 const OurProjects = () => {
-    const [selectedCategory, setSelectedCategory] = useState<string>("all");
+    const [selectedCategory, setSelectedCategory] = useState<string>("app development");
     const [filteredData, setFilteredData] = useState(projects);
 
     useEffect(() => {
+        console.log(selectedCategory)
         if (selectedCategory === "all") {
             setFilteredData(projects);
         } else {

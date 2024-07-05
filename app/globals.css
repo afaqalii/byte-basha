@@ -6,9 +6,9 @@
 @tailwind utilities;
 
 :root {
-  --yellow-light: "#FFAE45";
-  --yellow-dark: "#E47302";
-  --black: "#000000";
+  --yellow-light: #FFAE45;
+  --yellow-dark: #E47302;
+  --black: #000000;
 }
 
 * {
@@ -16,6 +16,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.remove-scrollbar::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 
 @layer base {
@@ -30,7 +35,7 @@
 
 @layer components {
   .btn-yellow {
-    @apply bg-yellowLight hover:scale-105 duration-150 text-white font-bold py-2 px-5 rounded max-w-max;
+    @apply bg-yellowLight border-black border overflow-hidden text-black hover:scale-105 duration-150  font-semibold py-2 px-5 rounded max-w-max;
   }
 }
 
