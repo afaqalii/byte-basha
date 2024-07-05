@@ -1,6 +1,7 @@
 import About from "./Home/About";
 import Hero from "./Home/Hero";
-import OurProjects from "./Home/OurProjects/OurProjects";
+import OurProjects from "./Home/OurProjects";
+import Services from "./Home/Services";
 
 export default function Home() {
   return (
@@ -8,5 +9,6 @@ export default function Home() {
       <Hero />
       <About />
       <OurProjects />
+      <Services />
     </>);
 }
