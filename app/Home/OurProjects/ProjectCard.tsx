@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ProjectCardProps } from "@/utils/types";
 import { motion } from 'framer-motion'
 import { getStaggerAnimation } from '@/utils/animation';
+import Image from 'next/image';
 const ProjectCard = ({ title, index, url, text, technologies }: ProjectCardProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -19,6 +20,8 @@ const ProjectCard = ({ title, index, url, text, technologies }: ProjectCardProps
                     className='w-full h-full object-cover'
                     src={url}
                     alt={title}
+                    // width={300}
+                    // height={300}
                 />
             </figure>
             <div>
