@@ -21,7 +21,7 @@ const About = () => {
                 <div className="lg:w-[55%]">
                     <h1 className="title text-yellowLight">Byte Basha</h1>
                     <p className="py-6">
-                        At ByteBasha, we pride ourselves on being leaders in the digital landscape, providing cutting-edge software services, comprehensive e-commerce solutions, and top-tier tech skill training. Our name, ByteBasha, combines the digital essence of "Byte" with "Basha," a title of respect, reflecting our commitment to excellence and authority in the tech industry
+                        At ByteBasha, we pride ourselves on being leaders in the digital landscape, providing cutting-edge software services, comprehensive e-commerce solutions, and top-tier tech skill training. Our name, ByteBasha, combines the digital essence of Byte with Basha, a title of respect, reflecting our commitment to excellence and authority in the tech industry
                     </p>
                     <button className="btn-yellow shadow-xl">Learn more</button>
                 </div>

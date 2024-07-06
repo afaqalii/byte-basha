@@ -1,4 +1,5 @@
 import { CategoryTabs, NavItem, ServiceCardProps } from "./types";
+import { FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 export const navItems: NavItem[] = [
   {
@@ -272,3 +273,12 @@ export const projects = [
 ];
 
 
+export const services = ["Web Development", "App Development", "Artificial Intelligence", "Digital Marketing", "Internships", "Workspaces"];
+export const company = ["About us", "Contact", "Workspaces", "Training", "Internships"];
+export const legal = ["Terms of use", "Privacy policy", "Cookie policy"];
+
+export const socialMedia = [
+  { name: "Twitter", icon: FaTwitter },
+  { name: "Facebook", icon: FaFacebook },
+  { name: "YouTube", icon: FaYoutube },
+];
