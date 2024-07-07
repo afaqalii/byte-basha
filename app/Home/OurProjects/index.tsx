@@ -7,11 +7,10 @@ import "./project.css";
 import { projects } from "@/utils/constants";
 
 const OurProjects = () => {
-    const [selectedCategory, setSelectedCategory] = useState<string>("app development");
+    const [selectedCategory, setSelectedCategory] = useState<string>("all");
     const [filteredData, setFilteredData] = useState(projects);
 
     useEffect(() => {
-        console.log(selectedCategory)
         if (selectedCategory === "all") {
             setFilteredData(projects);
         } else {
@@ -31,6 +30,7 @@ const OurProjects = () => {
             <div className="grid grid-cols-1 min-[500px]:grid-cols-2 min-[900px]:grid-cols-3 gap-5 mt-5">
                 {filteredData.map((card, index) => (
                     <ProjectCard
+                        key={index}
                         index={index}
                         title={card.title}
                         category={card.category}

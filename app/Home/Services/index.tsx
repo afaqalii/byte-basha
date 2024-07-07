@@ -10,6 +10,7 @@ const Services = () => {
             <div>
                 {servicesTabsArray.map((service) => (
                     <ServiceContainer
+                        key={service.text}
                         title={service.title}
                         text={service.text}
                         services={service.services}

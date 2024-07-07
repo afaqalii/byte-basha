@@ -16,12 +16,12 @@ const ProjectCard = ({ title, index, url, text, technologies }: ProjectCardProps
             {...getStaggerAnimation(index)}
             className="max-w-96 shadow-xl p-4 max-[500px]:mx-auto">
             <figure className='h-[300px]'>
-                <img
+                <Image
                     className='w-full h-full object-cover'
                     src={url}
                     alt={title}
-                    // width={300}
-                    // height={300}
+                    width={300}
+                    height={300}
                 />
             </figure>
             <div>
