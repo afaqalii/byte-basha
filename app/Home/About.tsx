@@ -2,11 +2,10 @@
 import Title from '../components/ui/Title'
 import hero from "../../public/assets/about.jpg"
 import FlexContainer from '../components/layout/FlexContainer'
+import { useRedirect } from '@/utils/helpers'
 
 const About = () => {
-    const handleButtonClick = () => {
-        console.log("about us triggered")
-    }
+    const redirect = useRedirect();
     return (
         <section className='container pb-20 pt-10'>
             <Title className="my-5 md:my-0">
@@ -20,7 +19,7 @@ const About = () => {
                 title="Byte Basha"
                 description="At ByteBasha, we pride ourselves on being leaders in the digital landscape, providing cutting-edge software services, comprehensive e-commerce solutions, and top-tier tech skill training. Our name, ByteBasha, combines the digital essence of Byte with Basha, a title of respect, reflecting our commitment to excellence and authority in the tech industry."
                 buttonText="Learn more"
-                onButtonClick={handleButtonClick}
+                onButtonClick={() => redirect('/about')}
             />
         </section>
     )
