@@ -1,4 +1,6 @@
 import { StaticImageData } from 'next/image';
+import { IconType } from 'react-icons';
+
 // interface for navItemss props array
 export interface NavItem {
     text: string;
@@ -8,6 +10,7 @@ export interface NavItem {
 export interface TitleProps {
     children: React.ReactNode;
     className?: string;
+    isRootLetter?: boolean;
 }
 // interface for project card props
 export interface ProjectCardProps {
@@ -73,4 +76,14 @@ export interface FlexContainerProps {
     buttonText?: string;
     onButtonClick?: () => void;
     reverse?: boolean;
+}
+
+// interface to define FeatureListingProps 
+interface featureListingObject {
+    title: string;
+    text: string;
+    icon: IconType;
+}
+export interface FeatureListingProps {
+    arrayOfFeatures: featureListingObject[];
 }

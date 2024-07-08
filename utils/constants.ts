@@ -1,6 +1,6 @@
 import { CategoryTabs, NavItem, ServiceCardProps } from "./types";
 import { FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
-
+import { FaUserTie, FaShieldAlt, FaLightbulb, FaHandsHelping, FaSeedling } from 'react-icons/fa';
 export const navItems: NavItem[] = [
   {
     text: "Home",
@@ -281,4 +281,33 @@ export const socialMedia = [
   { name: "Twitter", icon: FaTwitter },
   { name: "Facebook", icon: FaFacebook },
   { name: "YouTube", icon: FaYoutube },
+];
+
+
+export const featuresArray = [
+  {
+    title: 'Expertise',
+    text: 'Our team comprises highly skilled professionals with extensive experience in various tech domains.',
+    icon: FaUserTie,
+  },
+  {
+    title: 'Integrity',
+    text: 'We adhere to the highest ethical standards in all our dealings, ensuring trust and reliability.',
+    icon: FaShieldAlt,
+  },
+  {
+    title: 'Innovation',
+    text: 'We constantly explore new technologies and methodologies to provide our clients with state-of-the-art solutions.',
+    icon: FaLightbulb,
+  },
+  {
+    title: 'Customer Focus',
+    text: 'We prioritize our clients\' needs and work closely with them to deliver solutions that exceed expectations.',
+    icon: FaHandsHelping,
+  },
+  // {
+  //   title: 'Growth Opportunities',
+  //   text: 'Our internships and workspaces provide invaluable opportunities for learning, collaboration, and professional development.',
+  //   icon: FaSeedling,
+  // },
 ];

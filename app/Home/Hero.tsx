@@ -1,17 +1,11 @@
-// components/Hero.js
-// import } from "framer-;
 import Image from "next/image";
 import hero from "../../public/assets/hero.jpg";
-// import { fadeInUp } from "@/utils/animation";
 
 const Hero = () => {
     return (
         <div className="container pb-10 md:pb-20">
             <div className="flex items-center justify-between flex-col lg:flex-row-reverse">
                 <div
-                    // initial={{ opacity: 0, y: 20 }}
-                    // animate={{ opacity: 1, y: 0 }}
-                    // transition={{ duration: 0.8, ease: "easeOut" }}
                     className="lg:w-[45%]"
                 >
                     <Image
@@ -22,9 +16,6 @@ const Hero = () => {
                     />
                 </div>
                 <div
-                    // initial={{ opacity: 0, y: 20 }}
-                    // animate={{ opacity: 1, y: 0 }}
-                    // transition={{ duration: 0.8, ease: "easeOut" }}
                     className="lg:w-[55%]"
                 >
                     <h1 className="title text-yellowLight">

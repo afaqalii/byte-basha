@@ -4,8 +4,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import { navItems } from '@/utils/constants';
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,7 +28,7 @@ const Navbar = () => {
                 <Link
                   key={index}
                   href={item.href}
-                  className={` px-3 py-2 rounded-md text-[15.5px] font-semibold ${index === navItems.length - 1 ? 'btn-yellow' : 'text-gray-700 hover:text-yellowLight duration-150 hover:scale-105'}`}
+                  className={`${pathname === item.href ? 'text-yellowLight scale-105' : ''} px-3 py-2 rounded-md text-[15.5px] font-semibold ${index === navItems.length - 1 ? 'btn-yellow' : 'text-gray-700 hover:text-yellowLight duration-150 hover:scale-105'}`}
                 >
                   {item.text}
                 </Link>
@@ -48,7 +50,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={`/${item.text.toLowerCase().replace(/ /g, '-')}`}
-              className={`text-gray-700 hover:text-yellowLight duration-150 hover:scale-105 hover:ml-5 block px-3 py-2 rounded-md text-base font-medium`}
+              className={`${pathname === item.href ? 'text-yellowLight scale-105' : ''} text-gray-700 hover:text-yellowLight duration-150 hover:scale-105 hover:ml-5 block px-3 py-2 rounded-md text-base font-medium`}
             >
               {item.text}
             </Link>

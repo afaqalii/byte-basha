@@ -1,7 +1,7 @@
 'use client'
 import Title from '../components/ui/Title'
 import hero from "../../public/assets/about.jpg"
-import FlexContainer from '../components/ui/FlexContainer'
+import FlexContainer from '../components/layout/FlexContainer'
 
 const About = () => {
     const handleButtonClick = () => {
