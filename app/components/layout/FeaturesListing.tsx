@@ -3,7 +3,7 @@ import React from 'react'
 
 const FeaturesListing = ({ arrayOfFeatures }: FeatureListingProps) => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 my-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 py-3">
             {arrayOfFeatures.map((feature, index) => (
                 <div
                     key={index}

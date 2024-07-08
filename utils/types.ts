@@ -59,7 +59,7 @@ export interface ServiceCardProps {
 }
 
 // service container props 
-export interface ServiceContainerProps {
+export interface ServicesCarouselProps {
     title: string;
     text?: string;
     services: ServiceCardProps[];
@@ -87,3 +87,16 @@ interface featureListingObject {
 export interface FeatureListingProps {
     arrayOfFeatures: featureListingObject[];
 }
+// interface for service container props
+// ServiceCardProps interface
+export interface ServicesCardProps {
+    title: string;
+    text: string;
+    icon: IconType;
+  }
+  
+  // ServiceContainerProps interface
+  export interface ServicesContainerProps {
+    title: string;
+    services: ServicesCardProps[];
+  }

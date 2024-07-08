@@ -1,6 +1,7 @@
-import { CategoryTabs, NavItem, ServiceCardProps } from "./types";
+import { CategoryTabs, NavItem } from "./types";
 import { FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
 import { FaUserTie, FaShieldAlt, FaLightbulb, FaHandsHelping, FaSeedling } from 'react-icons/fa';
+import { FaCode, FaShoppingCart, FaChalkboardTeacher, FaUserGraduate, FaBuilding } from 'react-icons/fa';
 export const navItems: NavItem[] = [
   {
     text: "Home",
@@ -310,4 +311,32 @@ export const featuresArray = [
   //   text: 'Our internships and workspaces provide invaluable opportunities for learning, collaboration, and professional development.',
   //   icon: FaSeedling,
   // },
+];
+
+export const servicesArray = [
+  {
+    title: 'Software Services',
+    text: 'Custom software development, data science, and web development tailored to meet your business needs.',
+    icon: FaCode,
+  },
+  {
+    title: 'E-commerce Solutions',
+    text: 'End-to-end e-commerce platforms that enhance your online presence and drive sales.',
+    icon: FaShoppingCart,
+  },
+  {
+    title: 'Tech Skill Training',
+    text: 'Comprehensive training programs in the latest technologies, designed to equip individuals with the skills needed for success in the tech industry.',
+    icon: FaChalkboardTeacher,
+  },
+  {
+    title: 'Internships',
+    text: 'Opportunities for aspiring tech professionals to gain hands-on experience and mentorship in a dynamic work environment.',
+    icon: FaUserGraduate,
+  },
+  {
+    title: 'Workspaces',
+    text: 'Modern, collaborative workspaces that inspire creativity and productivity, available for our team and partners.',
+    icon: FaBuilding,
+  },
 ];
