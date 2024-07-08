@@ -1,4 +1,3 @@
-import React from 'react'
 import FlexContainer from '../components/layout/FlexContainer'
 import hero from "../../public/assets/hero.jpg";
 import mission from "../../public/assets/mission.jpg";
@@ -6,7 +5,7 @@ import vision from "../../public/assets/vision.svg";
 import WhyChooseUs from './WhyChooseUs';
 import ContactUs from '../components/layout/ContactUs';
 
-const Page = () => {
+const About = () => {
   return (
     <div className='container'>
       <FlexContainer
@@ -40,4 +39,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default About
