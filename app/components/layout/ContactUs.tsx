@@ -21,7 +21,7 @@ const ContactUs = () => {
     // };
 
     return (
-        <div className="container flex max-[950px]:flex-col max-[950px]: bg-black shadow-xl my-10 md:my-20 py-20 px-10 rounded-tr-xl rounded-tl-xl lg:rounded-xl">
+        <div className="flex max-[950px]:flex-col max-[950px]: bg-black shadow-xl my-10 md:my-20 py-20 px-10 rounded-tr-xl rounded-tl-xl lg:rounded-xl">
             {/* show on large screen above 768px */}
             <h1 className="text-white text-7xl mb-4 hidden  min-[950px]:block w-[40%]">Want <br /> to Elevate <br /> your brand?</h1>
             {/* show on small screen below 768px */}

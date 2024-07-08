@@ -6,11 +6,12 @@ import Services from "./Home/Services";
 
 export default function Home() {
   return (
-    <>
+    <div className="container">
       <Hero />
       <About />
       <OurProjects />
       <Services />
       <ContactUs />
-    </>);
+    </div>
+  );
 }

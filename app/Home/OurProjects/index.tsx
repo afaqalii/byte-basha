@@ -22,7 +22,7 @@ const OurProjects = () => {
     }, [selectedCategory]);
 
     return (
-        <section className="container">
+        <section>
             <div className="flex justify-between flex-wrap gap-x-3 items-center md:block">
                 <Title>Our Projects</Title>
                 <CategoryTabs selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />

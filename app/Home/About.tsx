@@ -7,7 +7,7 @@ import { useRedirect } from '@/utils/helpers'
 const About = () => {
     const redirect = useRedirect();
     return (
-        <section className='container pb-20 pt-10'>
+        <section className='pb-20 pt-10'>
             <Title className="my-5 md:my-0">
                 About Us
             </Title>

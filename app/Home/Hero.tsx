@@ -3,7 +3,7 @@ import hero from "../../public/assets/hero.jpg";
 
 const Hero = () => {
     return (
-        <div className="container pb-10 md:pb-20">
+        <div className="pb-10 md:pb-20">
             <div className="flex items-center justify-between flex-col lg:flex-row-reverse">
                 <div
                     className="lg:w-[45%]"

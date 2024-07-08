@@ -8,7 +8,7 @@ import { useRedirect } from '@/utils/helpers'
 const Services = () => {
     const redirect = useRedirect();
     return (
-        <div className='container py-10 md:py-20'>
+        <div className='py-10 md:py-20'>
             <Title className="mt-20">
                 Services We Offer
             </Title>
