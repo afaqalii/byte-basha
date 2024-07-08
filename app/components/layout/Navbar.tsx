@@ -16,10 +16,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image src="/assets/logo.jpg" alt="Logo" width={40} height={40} />
             <h1 className='font-bold ml-2'>Byte Basha</h1>
-          </div>
+          </Link>
           <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item, index) => (

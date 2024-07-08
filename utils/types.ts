@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 // interface for navItemss props array
 export interface NavItem {
     text: string;
@@ -59,4 +60,17 @@ export interface ServiceContainerProps {
     title: string;
     text?: string;
     services: ServiceCardProps[];
+}
+
+// interface for flexContainer props
+export interface FlexContainerProps {
+    imageSrc: StaticImageData;
+    imageAlt: string;
+    imageWidth: number;
+    imageHeight: number;
+    title: string;
+    description: string;
+    buttonText?: string;
+    onButtonClick?: () => void;
+    reverse?: boolean;
 }
