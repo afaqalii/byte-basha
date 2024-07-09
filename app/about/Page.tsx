@@ -5,7 +5,7 @@ import vision from "../../public/assets/vision.svg";
 import WhyChooseUs from './WhyChooseUs';
 import ContactUs from '../components/layout/ContactUs';
 
-const About = () => {
+const AboutUS = () => {
   return (
     <div className='container'>
       <FlexContainer
@@ -39,4 +39,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutUS
