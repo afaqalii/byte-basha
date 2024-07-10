@@ -9,7 +9,7 @@ export const navItems: NavItem[] = [
   },
   {
     text: "About Us",
-    href: "/about",
+    href: "/info",
   },
   {
     text: "Services",
