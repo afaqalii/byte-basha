@@ -50,7 +50,7 @@ const Internships: React.FC = () => {
           />
         ))}
       </div>
-      <ContactUs/>
+      <ContactUs title="Join Our Team!" context="Skills" />
     </div>
   );
 }

@@ -34,7 +34,7 @@ const Info = () => {
         description="To be a globally recognized tech company known for our integrity, innovation, and exceptional service, fostering a culture of continuous learning and growth."
       />
       <WhyChooseUs />
-      <ContactUs />
+      <ContactUs title="Contact Us!" context="Brand" />
     </div>
   )
 }

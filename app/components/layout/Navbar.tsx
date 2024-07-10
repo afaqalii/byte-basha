@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={`/${item.text.toLowerCase().replace(/ /g, '-')}`}
-              className={`${pathname === item.href ? 'text-yellowLight scale-105' : ''} text-gray-700 hover:text-yellowLight duration-150 hover:scale-105 hover:ml-5 block px-3 py-2 rounded-md text-base font-medium`}
+              className={`${pathname === item.href ? 'text-yellowLight scale-105' : ''} text-gray-700 hover:text-yellowLight duration-150 hover:ml-5 block px-3 py-2 rounded-md text-base font-medium`}
             >
               {item.text}
             </Link>

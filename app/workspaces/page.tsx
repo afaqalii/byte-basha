@@ -40,7 +40,7 @@ const Workspaces: React.FC = () => {
           />
         ))}
       </div>
-      <ContactUs />
+      <ContactUs title="Come join us!" context="workspaces" />
     </div>
   );
 }

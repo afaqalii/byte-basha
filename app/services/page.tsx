@@ -18,7 +18,7 @@ const Services = () => {
                     />
                 ))}
             </div>
-            <ContactUs />
+            <ContactUs title="Get in Touch!" context="Brand" />
         </div>
 
     )

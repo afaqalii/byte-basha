@@ -11,7 +11,7 @@ export default function Home() {
       <About />
       <OurProjects />
       <Services />
-      <ContactUs />
+      <ContactUs title="Contact Us!" context="brand" />
     </div>
   );
 }

@@ -45,7 +45,7 @@ const Training: React.FC = () => {
           />
         ))}
       </div>
-      <ContactUs />
+      <ContactUs title="Reach Out to Us!" context="Skills" />
     </div>
   );
 }
