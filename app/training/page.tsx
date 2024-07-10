@@ -1,8 +1,7 @@
 import React from 'react';
 import Title from '../components/ui/Title';
-import FlexContainer from '../components/layout/FlexContainer';
-import training from '../../public/assets/training.jpg';
 import Card from '../components/ui/Card';
+import ContactUs from '../components/layout/ContactUs';
 
 const trainingData = {
   title: "Training",
@@ -38,7 +37,7 @@ const Training: React.FC = () => {
       <p className="text-lg text-gray-600 mb-8">{trainingData.text}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {trainingData.services.map((service, index) => (
-          <Card 
+          <Card
             key={index}
             title={service.title}
             text={service.text}
@@ -46,6 +45,7 @@ const Training: React.FC = () => {
           />
         ))}
       </div>
+      <ContactUs />
     </div>
   );
 }
