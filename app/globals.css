@@ -35,7 +35,7 @@
 
 @layer components {
   .btn-yellow {
-    @apply bg-yellowLight border-black border overflow-hidden text-black hover:scale-105 duration-150  font-semibold py-2 px-5 rounded max-w-max;
+    @apply bg-yellowLight border-black border overflow-hidden text-black hover:scale-105 duration-150 font-semibold py-2 px-5 rounded max-w-max;
   }
 }
 
@@ -43,4 +43,19 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin .5s linear infinite;
 }

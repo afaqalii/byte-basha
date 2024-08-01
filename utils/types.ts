@@ -14,7 +14,7 @@ export interface TitleProps {
 }
 // interface for project card props
 export interface ProjectCardProps {
-    url: string;
+    file: string;
     title: string;
     text: string;
     category: string;
@@ -30,6 +30,7 @@ export interface CategoryTabProps {
 // interface for Category tabs array
 export interface CategoryTabs {
     text: string;
+    value:string;
 }
 
 // interface for framer motion animation
@@ -93,10 +94,21 @@ export interface ServicesCardProps {
     title: string;
     text: string;
     icon: IconType;
-  }
-  
-  // ServiceContainerProps interface
-  export interface ServicesContainerProps {
+}
+
+// ServiceContainerProps interface
+export interface ServicesContainerProps {
     title: string;
     services: ServicesCardProps[];
-  }
+}
+
+
+
+export interface projectData {
+    id: number;
+    title: string;
+    file: string;
+    text: string;
+    category: string;
+    technologies: string[];
+}

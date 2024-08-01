@@ -4,7 +4,7 @@ import { ProjectCardProps } from "@/utils/types";
 import { motion } from 'framer-motion'
 import { getStaggerAnimation } from '@/utils/animation';
 import Image from 'next/image';
-const ProjectCard = ({ title, index, url, text, technologies }: ProjectCardProps) => {
+const ProjectCard = ({ title, index, file, text, technologies }: ProjectCardProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleReadMore = () => {
@@ -18,7 +18,7 @@ const ProjectCard = ({ title, index, url, text, technologies }: ProjectCardProps
             <figure className='h-[300px]'>
                 <Image
                     className='w-full h-full object-cover'
-                    src={url}
+                    src={file}
                     alt={title}
                     width={300}
                     height={300}
