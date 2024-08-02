@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image';
 import { IconType } from 'react-icons';
-
 // interface for navItemss props array
 export interface NavItem {
     text: string;
@@ -30,9 +29,8 @@ export interface CategoryTabProps {
 // interface for Category tabs array
 export interface CategoryTabs {
     text: string;
-    value:string;
+    value: string;
 }
-
 // interface for framer motion animation
 export interface AnimationProps {
     initial: {
@@ -51,14 +49,12 @@ export interface AnimationProps {
         delay: number;
     };
 }
-
 // interface for services card props
 export interface ServiceCardProps {
     title: string;
     text: string;
     svg: string;
 }
-
 // service container props 
 export interface ServicesCarouselProps {
     title: string;
@@ -78,7 +74,6 @@ export interface FlexContainerProps {
     onButtonClick?: () => void;
     reverse?: boolean;
 }
-
 // interface to define FeatureListingProps 
 interface featureListingObject {
     title: string;
@@ -95,20 +90,39 @@ export interface ServicesCardProps {
     text: string;
     icon: IconType;
 }
-
 // ServiceContainerProps interface
 export interface ServicesContainerProps {
     title: string;
     services: ServicesCardProps[];
 }
-
-
-
-export interface projectData {
+export interface componentProps {
     id: number;
     title: string;
     file: string;
     text: string;
+}
+export interface trainingProps extends componentProps { }
+export interface servicesProps extends componentProps { }
+export interface workspacesProps extends componentProps { }
+export interface projectProps extends componentProps {
     category: string;
     technologies: string[];
+}
+export interface DataProps {
+    id: number;
+    title: string;
+    file: string;
+    text: string;
+    category?: string;
+    technologies?: string[];
+}
+export interface CardProps {
+    title: string;
+    text: string;
+    file: string;
+}
+
+export interface GridColsProps {
+    isLoading: boolean;
+    data: CardProps[];
 }

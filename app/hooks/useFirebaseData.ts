@@ -1,9 +1,9 @@
 import { database } from '@/firebase';
-import { projectData } from '@/utils/types';
+import { DataProps } from '@/utils/types';
 import { useQuery } from '@tanstack/react-query';
 import { ref, get } from 'firebase/database';
 
-const fetchData = async (path: string): Promise<projectData[]> => {
+const fetchData = async (path: string): Promise<DataProps[]> => {
     const dbRef = ref(database, path);
     const snapshot = await get(dbRef);
     if (snapshot.exists()) {
@@ -14,9 +14,9 @@ const fetchData = async (path: string): Promise<projectData[]> => {
 };
 
 export const useFirebaseData = (path: string) => {
-    return useQuery<projectData[]>({
+    return useQuery({
         queryKey: [path],
         queryFn: () => fetchData(path),
-        staleTime: 1000 * 60 * 5, // Data is fresh for 5 minutes
+        staleTime: 1000 * 60 * 5, 
     });
 };
