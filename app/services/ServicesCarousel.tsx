@@ -4,8 +4,9 @@ import { ServicesCarouselProps } from "@/utils/types";
 import ServiceCard from "./ServiceCard";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./services.css"
+import Link from 'next/link';
 
-const ServicesCarousel = ({ title, text, services }: ServicesCarouselProps) => {
+const ServicesCarousel = ({ title, href, services }: ServicesCarouselProps) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [showLeftButton, setShowLeftButton] = useState(false);
     const [showRightButton, setShowRightButton] = useState(false);
@@ -43,9 +44,9 @@ const ServicesCarousel = ({ title, text, services }: ServicesCarouselProps) => {
     };
 
     return (
-        <div className="relative border-2 border-yellowLight mt-10">
+        <div className="relative border-2 border-yellowLight mt-10 pb-5">
             <h1 className='absolute -top-4 left-4 bg-white px-3 text-xl font-semibold'>{title}</h1>
-            <div ref={containerRef} className="service-container flex gap-7 overflow-x-auto my-10 p-5">
+            <div ref={containerRef} className="service-container flex gap-7 overflow-x-auto mt-10 p-5">
                 {services.map((service, index) => (
                     <ServiceCard
                         key={index}
@@ -71,6 +72,9 @@ const ServicesCarousel = ({ title, text, services }: ServicesCarouselProps) => {
                     <FaArrowRight />
                 </button>
             )}
+            <div className="px-5 mt-5">
+                <Link href={href} className='btn-yellow mt-4 uppercase'>{href.replace("/", "")}</Link>
+            </div>
         </div>
     )
 }

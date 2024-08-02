@@ -28,7 +28,7 @@ const Navbar = () => {
                 <Link
                   key={index}
                   href={item.href}
-                  className={`${pathname === item.href ? 'text-yellowLight scale-105' : ''} px-3 py-2 rounded-md text-[15.5px] font-semibold ${index === navItems.length - 1 ? 'btn-yellow' : 'text-gray-700 hover:text-yellowLight duration-150 hover:scale-105'}`}
+                  className={`${pathname === item.href && item.href !== '/contact' ? 'text-yellowLight scale-105' : ''} px-3 py-2 rounded-md text-[15.5px] font-semibold ${index === navItems.length - 1 ? 'btn-yellow' : 'text-gray-700 hover:text-yellowLight duration-150 hover:scale-105'}`}
                 >
                   {item.text}
                 </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
           {navItems.slice(0, navItems.length - 1).map((item, index) => (
             <Link
               key={index}
-              href={`/${item.text.toLowerCase().replace(/ /g, '-')}`}
+              href={item.href}
               className={`${pathname === item.href ? 'text-yellowLight' : ''} text-gray-700 hover:text-yellowLight duration-150 block px-3 py-2 rounded-md text-base font-medium`}
             >
               {item.text}

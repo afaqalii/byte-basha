@@ -58,7 +58,7 @@ export interface ServiceCardProps {
 // service container props 
 export interface ServicesCarouselProps {
     title: string;
-    text?: string;
+    href: string;
     services: ServiceCardProps[];
 }
 

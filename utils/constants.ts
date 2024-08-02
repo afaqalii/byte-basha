@@ -58,6 +58,7 @@ export const servicesTabsArray = [
   {
     title: "Software Services",
     text: "We offer a range of software services to meet your needs.",
+    href: "/contact",
     services: [
       {
         title: "Web Development",
@@ -86,89 +87,92 @@ export const servicesTabsArray = [
       },
     ],
   },
-  {
-    title: "Training/Courses Programs",
-    text: "We offer a variety of training and courses to help you gain skills in the latest technologies.",
-    services: [
-      {
-        title: "Web Development Training",
-        text: "Learn the fundamentals of web development, including HTML, CSS, JavaScript, and popular frameworks like React and Angular.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "Artificial Intelligence Training",
-        text: "Get hands-on experience with AI technologies, including machine learning, neural networks, and data analysis techniques.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "WordPress Development Training",
-        text: "Master WordPress development, from basic setup to advanced customizations and plugin development.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "App Development Training",
-        text: "Learn how to develop mobile apps for iOS and Android using popular tools and frameworks.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "Digital Marketing Training",
-        text: "Gain expertise in digital marketing strategies, including SEO, social media marketing, and content creation.",
-        svg: "/assets/webdev.jpg",
-      },
-    ],
-  },
-  {
-    title: "Internships",
-    text: "We offer internships to help you gain practical experience in your field of interest.",
-    services: [
-      {
-        title: "Web Development Internship",
-        text: "Get hands-on experience in web development by working on real projects with our team of experts.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "Artificial Intelligence Internship",
-        text: "Work on AI projects and gain practical experience in machine learning, data analysis, and more.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "WordPress Development Internship",
-        text: "Learn WordPress development by working on real projects, from basic setup to advanced customizations.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "App Development Internship",
-        text: "Develop mobile apps for iOS and Android and gain hands-on experience in app development.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "Digital Marketing Internship",
-        text: "Gain practical experience in digital marketing by working on real campaigns and projects.",
-        svg: "/assets/webdev.jpg",
-      },
-    ],
-  },
-  {
-    title: "Workspaces",
-    text: "Our workspaces are designed to provide a productive environment for you to work in.",
-    services: [
-      {
-        title: "Productive Environment",
-        text: "Our workspaces are designed to enhance productivity with comfortable seating, ample lighting, and a quiet atmosphere.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "High-Speed Wi-Fi",
-        text: "Stay connected with our high-speed Wi-Fi, available throughout our workspaces to ensure you can work efficiently.",
-        svg: "/assets/webdev.jpg",
-      },
-      {
-        title: "Free Coffee",
-        text: "Enjoy complimentary coffee while you work, available in our workspaces to keep you energized throughout the day.",
-        svg: "/assets/webdev.jpg",
-      },
-    ],
-  },
+  // {
+  //   title: "Training/Courses Programs",
+  //   text: "We offer a variety of training and courses to help you gain skills in the latest technologies.",
+  //   href: "/training",
+  //   services: [
+  //     {
+  //       title: "Web Development Training",
+  //       text: "Learn the fundamentals of web development, including HTML, CSS, JavaScript, and popular frameworks like React and Angular.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "Artificial Intelligence Training",
+  //       text: "Get hands-on experience with AI technologies, including machine learning, neural networks, and data analysis techniques.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "WordPress Development Training",
+  //       text: "Master WordPress development, from basic setup to advanced customizations and plugin development.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "App Development Training",
+  //       text: "Learn how to develop mobile apps for iOS and Android using popular tools and frameworks.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "Digital Marketing Training",
+  //       text: "Gain expertise in digital marketing strategies, including SEO, social media marketing, and content creation.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Internships",
+  //   text: "We offer internships to help you gain practical experience in your field of interest.",
+  //   href: "/internship",
+  //   services: [
+  //     {
+  //       title: "Web Development Internship",
+  //       text: "Get hands-on experience in web development by working on real projects with our team of experts.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "Artificial Intelligence Internship",
+  //       text: "Work on AI projects and gain practical experience in machine learning, data analysis, and more.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "WordPress Development Internship",
+  //       text: "Learn WordPress development by working on real projects, from basic setup to advanced customizations.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "App Development Internship",
+  //       text: "Develop mobile apps for iOS and Android and gain hands-on experience in app development.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "Digital Marketing Internship",
+  //       text: "Gain practical experience in digital marketing by working on real campaigns and projects.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Workspaces",
+  //   text: "Our workspaces are designed to provide a productive environment for you to work in.",
+  //   href: "/workspaces",
+  //   services: [
+  //     {
+  //       title: "Productive Environment",
+  //       text: "Our workspaces are designed to enhance productivity with comfortable seating, ample lighting, and a quiet atmosphere.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "High-Speed Wi-Fi",
+  //       text: "Stay connected with our high-speed Wi-Fi, available throughout our workspaces to ensure you can work efficiently.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //     {
+  //       title: "Free Coffee",
+  //       text: "Enjoy complimentary coffee while you work, available in our workspaces to keep you energized throughout the day.",
+  //       svg: "/assets/webdev.jpg",
+  //     },
+  //   ],
+  // },
 ];
 
 export const services = ["Web Development", "App Development", "Artificial Intelligence", "Digital Marketing", "Internships", "Workspaces"];

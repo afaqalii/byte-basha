@@ -13,8 +13,8 @@ const Services = () => {
                     <ServicesCarousel
                         key={service.text}
                         title={service.title}
-                        text={service.text}
                         services={service.services}
+                        href={service.href}
                     />
                 ))}
             </div>
