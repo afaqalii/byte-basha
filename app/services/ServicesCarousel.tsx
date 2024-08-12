@@ -5,6 +5,7 @@ import ServiceCard from "./ServiceCard";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./services.css"
 import Link from 'next/link';
+import AnotherServiceCard from './AnotherServiceCard';
 
 const ServicesCarousel = ({ title, href, services }: ServicesCarouselProps) => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -46,7 +47,7 @@ const ServicesCarousel = ({ title, href, services }: ServicesCarouselProps) => {
     return (
         <div className="relative border-2 border-yellowLight mt-10 pb-5">
             <h1 className='absolute -top-4 left-4 bg-white px-3 text-xl font-semibold'>{title}</h1>
-            <div ref={containerRef} className="service-container flex gap-7 overflow-x-auto mt-10 p-5">
+            {/* <div ref={containerRef} className="service-container flex gap-7 overflow-x-auto mt-10 p-5">
                 {services.map((service, index) => (
                     <ServiceCard
                         key={index}
@@ -55,8 +56,8 @@ const ServicesCarousel = ({ title, href, services }: ServicesCarouselProps) => {
                         svg={service.svg}
                     />
                 ))}
-            </div>
-            {showLeftButton && (
+            </div> */}
+            {/* {showLeftButton && (
                 <button
                     className="scroll-button left-button"
                     onClick={() => scrollContainer(-300)} // Adjust scroll amount as needed
@@ -71,7 +72,7 @@ const ServicesCarousel = ({ title, href, services }: ServicesCarouselProps) => {
                 >
                     <FaArrowRight />
                 </button>
-            )}
+            )} */}
             <div className="px-5 mt-5">
                 <Link href={href} className='btn-yellow mt-4 uppercase'>{href.replace("/", "")}</Link>
             </div>

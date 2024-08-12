@@ -73,6 +73,7 @@ export interface FlexContainerProps {
     buttonText?: string;
     onButtonClick?: () => void;
     reverse?: boolean;
+    titleColor?: string
 }
 // interface to define FeatureListingProps 
 interface featureListingObject {
@@ -89,6 +90,7 @@ export interface ServicesCardProps {
     title: string;
     text: string;
     icon: IconType;
+    href: string,
 }
 // ServiceContainerProps interface
 export interface ServicesContainerProps {

@@ -1,5 +1,7 @@
 'use client'
+import { fadeInUp } from '@/utils/animation';
 import { FlexContainerProps } from '@/utils/types';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const FlexContainer = ({
@@ -11,11 +13,13 @@ const FlexContainer = ({
     description,
     buttonText,
     onButtonClick,
-    reverse = false
+    reverse = false,
+    titleColor = "text-yellowLight"
 }: FlexContainerProps) => {
     return (
-        <div
-            className={`flex items-center justify-between flex-col lg:flex-row ${reverse ? 'flex-col-reverse lg:flex-row-reverse' : ''}`}
+        <motion.div
+            {...fadeInUp}
+            className={`flex items-center justify-between flex-col lg:flex-row py-20 ${reverse ? 'flex-col-reverse lg:flex-row-reverse' : ''}`}
         >
             <figure className="lg:w-[45%]">
                 <Image
@@ -26,15 +30,15 @@ const FlexContainer = ({
                 />
             </figure>
             <div className="lg:w-[55%]">
-                <h1 className="title text-yellowLight">{title}</h1>
-                <p className="py-6">{description}</p>
+                <h1 className={`title ${titleColor}`}>{title}</h1>
+                <p className="py-6 w-[90%]">{description}</p>
                 {buttonText && (
                     <button className="btn-yellow shadow-xl" onClick={onButtonClick}>
                         {buttonText}
                     </button>
                 )}
             </div>
-        </div>
+        </motion.div>
     );
 }
 

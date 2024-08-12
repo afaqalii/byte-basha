@@ -16,6 +16,10 @@ export const navItems: NavItem[] = [
     href: "/services",
   },
   {
+    text: "Our Team",
+    href: "/team",
+  },
+  {
     text: "Training",
     href: "/training",
   },
@@ -175,9 +179,34 @@ export const servicesTabsArray = [
   // },
 ];
 
-export const services = ["Web Development", "App Development", "Artificial Intelligence", "Digital Marketing", "Internships", "Workspaces"];
-export const company = ["About us", "Contact", "Workspaces", "Training", "Internships"];
-export const legal = ["Terms of use", "Privacy policy", "Cookie policy"];
+export const services = [
+  {
+    text: "Web Development",
+    href: "/serivces"
+  },
+  {
+    text: "App Development",
+    href: "/serivces"
+  },
+  {
+    text: "Artificial Intelligence",
+    href: "/serivces"
+  },
+  {
+    text: "Digital Marketing",
+    href: "/serivces"
+  },
+  {
+    text: "Internships",
+    href: "/internships"
+  },
+  {
+    text: "Workspaces",
+    href: "/workspaces"
+  },
+];
+
+export const legal = ["Privacy policy"];
 
 export const socialMedia = [
   { name: "Twitter", icon: FaTwitter },
@@ -214,25 +243,30 @@ export const servicesArray = [
     title: 'Software Services',
     text: 'Custom software development, data science, and web development tailored to meet your business needs.',
     icon: FaCode,
+    href: "/services",
   },
   {
     title: 'E-commerce Solutions',
     text: 'End-to-end e-commerce platforms that enhance your online presence and drive sales.',
     icon: FaShoppingCart,
+    href: "/services",
   },
   {
     title: 'Tech Skill Training',
     text: 'Comprehensive training programs in the latest technologies, designed to equip individuals with the skills needed for success in the tech industry.',
     icon: FaChalkboardTeacher,
+    href: "/training",
   },
   {
     title: 'Internships',
     text: 'Opportunities for aspiring tech professionals to gain hands-on experience and mentorship in a dynamic work environment.',
     icon: FaUserGraduate,
+    href: "/internships",
   },
   {
     title: 'Workspaces',
     text: 'Modern, collaborative workspaces that inspire creativity and productivity, available for our team and partners.',
     icon: FaBuilding,
+    href: "/workspaces",
   },
 ];

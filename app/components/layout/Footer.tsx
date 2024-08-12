@@ -1,6 +1,6 @@
-import { company, legal, services, socialMedia } from "@/utils/constants";
-import logo from "../../../public/assets/logo.jpg";
-import Image from "next/image";
+'use client'
+import { legal, navItems, services, socialMedia } from "@/utils/constants";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -9,13 +9,13 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Services</h6>
           {services.map((service, index) => (
-            <a key={index} className="link link-hover">{service}</a>
+            <Link href={service.href} key={index} className="link link-hover">{service.text}</Link>
           ))}
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          {company.map((item, index) => (
-            <a key={index} className="link link-hover">{item}</a>
+          {navItems.map((item, index) => (
+            <Link href={item.href} key={index} className="link link-hover">{item.text}</Link>
           ))}
         </nav>
         <nav>
