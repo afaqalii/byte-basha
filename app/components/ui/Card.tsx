@@ -3,7 +3,7 @@ import { CardProps } from "@/utils/types";
 const Card: React.FC<CardProps> = ({ title, text, file }) => {
   return (
     <div className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <figure className="h-[300px]">
+      <figure className="h-[300px] bg-gray-200">
         <img
           src={file}
           alt={title}
