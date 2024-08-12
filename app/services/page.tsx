@@ -54,6 +54,7 @@ const Services = () => {
                 titleColor="text-black"
                 title="WordPress Development"
                 description="We offer custom WordPress development services to create dynamic and responsive websites tailored to your specific requirements."
+                reverse={true}
             />
             <FlexContainer
                 imageSrc={appdev}
@@ -63,7 +64,6 @@ const Services = () => {
                 title="App Development"
                 titleColor="text-black"
                 description="Our app development services cover both iOS and Android platforms, delivering high-quality mobile applications to enhance user engagement."
-                reverse={true}
             />
             <FlexContainer
                 imageSrc={dm}
@@ -73,6 +73,7 @@ const Services = () => {
                 title="Digital Marketing"
                 titleColor="text-black"
                 description="We provide digital marketing services to boost your online presence, including SEO, social media marketing, and content creation."
+                reverse={true}
             />
             {/* <div className="my-10">
                 {
