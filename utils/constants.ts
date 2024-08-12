@@ -182,19 +182,19 @@ export const servicesTabsArray = [
 export const services = [
   {
     text: "Web Development",
-    href: "/serivces"
+    href: "/services"
   },
   {
     text: "App Development",
-    href: "/serivces"
+    href: "/services"
   },
   {
     text: "Artificial Intelligence",
-    href: "/serivces"
+    href: "/services"
   },
   {
     text: "Digital Marketing",
-    href: "/serivces"
+    href: "/services"
   },
   {
     text: "Internships",

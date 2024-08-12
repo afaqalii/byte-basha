@@ -45,7 +45,6 @@ const Services = () => {
                 titleColor="text-black"
                 title="Artificial Intelligence"
                 description="Our AI services include machine learning, natural language processing, and data analysis to help you leverage the power of artificial intelligence in your business."
-                reverse={true}
             />
             <FlexContainer
                 imageSrc={wp}
