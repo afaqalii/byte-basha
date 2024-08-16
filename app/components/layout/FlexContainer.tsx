@@ -1,8 +1,8 @@
 'use client'
-import { fadeInUp } from '@/utils/animation';
 import { FlexContainerProps } from '@/utils/types';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { fadeInUp } from '@/utils/animation';
 
 const FlexContainer = ({
     imageSrc,
@@ -31,7 +31,11 @@ const FlexContainer = ({
             </figure>
             <div className="lg:w-[55%]">
                 <h1 className={`title ${titleColor}`}>{title}</h1>
-                <p className="py-6 w-[90%]">{description}</p>
+                <div className="py-6 w-[90%]">
+                    {description.map((para, index) => (
+                        <p key={index} dangerouslySetInnerHTML={{ __html: para }} />
+                    ))}
+                </div>
                 {buttonText && (
                     <button className="btn-yellow shadow-xl" onClick={onButtonClick}>
                         {buttonText}

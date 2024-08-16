@@ -2,6 +2,95 @@ import { CategoryTabs, NavItem } from "./types";
 import { FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
 import { FaUserTie, FaShieldAlt, FaLightbulb, FaHandsHelping, FaSeedling } from 'react-icons/fa';
 import { FaCode, FaShoppingCart, FaChalkboardTeacher, FaUserGraduate, FaBuilding } from 'react-icons/fa';
+
+// images
+import webdev from "@/public/assets/webdev.jpg"
+import ai from "@/public/assets/ai.jpg"
+import wp from "@/public/assets/wp.jpg"
+import appdev from "@/public/assets/appdev.jpg"
+import dm from "@/public/assets/dm.jpg"
+import ecommerce from "@/public/assets/ecommerce.jpg"
+
+export const servicesData = [
+  {
+    imageSrc: webdev,
+    imageAlt: "Web Development",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "Web Development",
+    description: [
+      `<p>Transform your digital presence with our comprehensive web development solutions. We offer end-to-end services tailored to meet your specific needs.</p>`,
+      `<br/>`,
+      `<p><strong>MERN Stack:</strong> Harness the power of MongoDB, Express.js, React.js, and Node.js to build high-performance, dynamic web applications. This stack is ideal for developing modern web applications that are fast, scalable, and maintainable.</p>`,
+      `<p><strong>MEAN Stack:</strong> Utilize MongoDB, Express.js, Angular, and Node.js for creating scalable and efficient web applications. With Angular at the front end, you'll get dynamic, single-page applications that are responsive and user-friendly.</p>`,
+      `<p><strong>Full Stack Development:</strong> Get complete solutions with both front-end and back-end technologies. Our full-stack development services ensure seamless integration of all components, resulting in robust and integrated web systems.</p>`,
+      `<p><strong>Custom Website Design:</strong> Craft a unique online presence with our tailored website design services. We blend creativity with technology to deliver responsive, visually appealing websites that reflect your brand identity and engage your audience.</p>`,
+    ],
+  },
+  {
+    imageSrc: wp,
+    imageAlt: "WordPress Development",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "CMS/WordPress Website Development",
+    description: [
+      `<p>Our WordPress development services provide dynamic and responsive websites tailored to your specific requirements.</p>`,
+      `<p>We specialize in <strong>custom themes</strong>, plugins, and website optimization to ensure your WordPress site stands out. Whether you're looking for a simple blog or a complex e-commerce platform, we have the expertise to bring your vision to life.</p>`,
+    ],
+    reverse: true,
+  },
+  {
+    imageSrc: ecommerce,
+    imageAlt: "E-commerce Solutions",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "E-commerce Solution",
+    description: [
+      `<p>Expand your business online with our e-commerce solutions. We create secure, user-friendly online stores that are designed to enhance the customer experience and drive sales.</p>`,
+      `<p><strong>SEO Services:</strong> Improve your website’s visibility and attract more visitors with our strategic SEO services. We use advanced techniques to boost your search engine rankings, making it easier for customers to find your products.</p>`,
+      `<p><strong>Content Management Systems (CMS):</strong> Manage your site with ease using our intuitive CMS solutions. We provide platforms that allow you to effortlessly update and control your content, without needing technical expertise.</p>`,
+      `<p><strong>Website Maintenance & Support:</strong> Keep your website in top shape with our ongoing maintenance and support services. We offer regular updates, security enhancements, and troubleshooting to ensure your site performs optimally.</p>`,
+    ],
+  },
+  {
+    imageSrc: ai,
+    imageAlt: "Artificial Intelligence",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "Artificial Intelligence",
+    description: [
+      `<p>Unlock the potential of artificial intelligence in your business. Our AI services include <strong>machine learning</strong>, <strong>natural language processing</strong>, and <strong>data analysis</strong> to help you make smarter decisions and automate processes.</p>`,
+      `<p>From predictive analytics to AI-powered chatbots, we provide solutions that can enhance your business operations and customer engagement.</p>`,
+    ],
+    reverse: true,
+  },
+  {
+    imageSrc: appdev,
+    imageAlt: "App Development",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "App Development",
+    description: [
+      `<p>Unlock the potential of your business with our cutting-edge app development services. We create high-performance, user-centric mobile applications for both iOS and Android platforms.</p>`,
+      `<p>Our apps are designed to offer seamless functionality and engaging user experiences, tailored to your business needs.</p>`,
+    ],
+  },
+  {
+    imageSrc: dm,
+    imageAlt: "Digital Marketing",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "Digital Marketing",
+    description: [
+      `<p>Boost your online presence with our comprehensive digital marketing services. We offer <strong>SEO</strong>, <strong>social media marketing</strong>, content creation, and more to help you reach your target audience and achieve your business goals.</p>`,
+      `<p>Our strategies are tailored to your specific needs, ensuring maximum impact and return on investment.</p>`,
+    ],
+    reverse: true,
+  },
+];
+
+
+
 export const navItems: NavItem[] = [
   {
     text: "Home",

@@ -69,7 +69,7 @@ export interface FlexContainerProps {
     imageWidth: number;
     imageHeight: number;
     title: string;
-    description: string;
+    description: string[];
     buttonText?: string;
     onButtonClick?: () => void;
     reverse?: boolean;
