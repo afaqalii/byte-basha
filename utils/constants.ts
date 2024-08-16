@@ -104,22 +104,22 @@ export const navItems: NavItem[] = [
     text: "Services",
     href: "/services",
   },
-  {
-    text: "Our Team",
-    href: "/team",
-  },
-  {
-    text: "Training",
-    href: "/training",
-  },
-  {
-    text: "Internships",
-    href: "/internships",
-  },
-  {
-    text: "Workspaces",
-    href: "/workspaces",
-  },
+  // {
+  //   text: "Our Team",
+  //   href: "/team",
+  // },
+  // {
+  //   text: "Training",
+  //   href: "/training",
+  // },
+  // {
+  //   text: "Internships",
+  //   href: "/internships",
+  // },
+  // {
+  //   text: "Workspaces",
+  //   href: "/workspaces",
+  // },
   {
     text: "Contact",
     href: "/contact",

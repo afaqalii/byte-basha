@@ -5,6 +5,7 @@ import mission from "../../public/assets/mission.jpg";
 import vision from "../../public/assets/vision.svg";
 import ContactUs from '../components/layout/ContactUs';
 import WhyChooseUs from './WhyChooseUs';
+import OurTeam from './OurTeam';
 
 const Info = () => {
   return (
@@ -35,6 +36,7 @@ const Info = () => {
         description={[`<p>To be a globally recognized tech company known for our integrity, innovation, and exceptional service, fostering a culture of continuous learning and growth.</p>`]}
       />
       <WhyChooseUs />
+      <OurTeam />
       <ContactUs title="Contact Us!" context="Brand" />
     </div>
   )
