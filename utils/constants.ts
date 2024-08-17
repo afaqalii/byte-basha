@@ -1,5 +1,9 @@
 import { CategoryTabs, NavItem } from "./types";
-import { FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaThreads, FaMedium } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { FaUpwork } from "react-icons/fa6";
+import { SiFiverr } from "react-icons/si";
 import { FaUserTie, FaShieldAlt, FaLightbulb, FaHandsHelping, FaSeedling } from 'react-icons/fa';
 import { FaCode, FaShoppingCart, FaChalkboardTeacher, FaUserGraduate, FaBuilding } from 'react-icons/fa';
 
@@ -10,6 +14,9 @@ import wp from "@/public/assets/wp.jpg"
 import appdev from "@/public/assets/appdev.jpg"
 import dm from "@/public/assets/dm.jpg"
 import ecommerce from "@/public/assets/ecommerce.jpg"
+import internship from "@/public/assets/internship.png"
+import workspace from "@/public/assets/workspace.png"
+import training from "@/public/assets/training.png"
 
 export const servicesData = [
   {
@@ -87,6 +94,37 @@ export const servicesData = [
     ],
     reverse: true,
   },
+  {
+    imageSrc: internship,
+    imageAlt: "Internship",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "Internship",
+    description: [
+      `<p><strong>Coming Soon!</strong/></p>`,
+    ],
+  },
+  {
+    imageSrc: workspace,
+    imageAlt: "Workspaces",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "Workspaces",
+    description: [
+      `<p><strong>Coming Soon!</strong/></p>`,
+    ],
+    reverse: true,
+  },
+  {
+    imageSrc: training,
+    imageAlt: "Training",
+    imageWidth: 1200,
+    imageHeight: 1200,
+    title: "Training",
+    description: [
+      `<p><strong>Coming Soon!</strong/></p>`,
+    ],
+  },
 ];
 
 
@@ -104,22 +142,6 @@ export const navItems: NavItem[] = [
     text: "Services",
     href: "/services",
   },
-  // {
-  //   text: "Our Team",
-  //   href: "/team",
-  // },
-  // {
-  //   text: "Training",
-  //   href: "/training",
-  // },
-  // {
-  //   text: "Internships",
-  //   href: "/internships",
-  // },
-  // {
-  //   text: "Workspaces",
-  //   href: "/workspaces",
-  // },
   {
     text: "Contact",
     href: "/contact",
@@ -298,11 +320,15 @@ export const services = [
 export const legal = ["Privacy policy"];
 
 export const socialMedia = [
-  { name: "Twitter", icon: FaTwitter },
-  { name: "Facebook", icon: FaFacebook },
-  { name: "YouTube", icon: FaYoutube },
+  { name: "LinkedIn", icon: FaLinkedin, href: "https://www.linkedin.com/company/bytebasha/" },
+  { name: "Facebook", icon: FaFacebook, href: "https://www.facebook.com/people/ByteBasha/61561737872978/?mibextid=qi2Omg&rdid=smYAZlltncVYiZOo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FH9Xzpx3bDyad1mzC%2F%3Fmibextid%3Dqi2Omg" },
+  { name: "Threads", icon: FaThreads, href: "https://www.threads.net/@bytebasha" },
+  { name: "X", icon: BsTwitterX, href: "https://x.com/bytebasha" },
+  { name: "Instagram", icon: FaInstagram, href: "https://www.instagram.com/bytebasha" },
+  { name: "Fiverr", icon: SiFiverr, href: "https://www.fiverr.com/bytebasha" },
+  { name: "Upwork", icon: FaUpwork, href: "https://www.upwork.com/freelancers/~01240fae196e152a87?mp_source=share" },
+  { name: "Medium", icon: FaMedium, href: "https://medium.com/@bytebasha" },
 ];
-
 
 export const featuresArray = [
   {
@@ -344,18 +370,18 @@ export const servicesArray = [
     title: 'Tech Skill Training',
     text: 'Comprehensive training programs in the latest technologies, designed to equip individuals with the skills needed for success in the tech industry.',
     icon: FaChalkboardTeacher,
-    href: "/training",
+    href: "/services",
   },
   {
     title: 'Internships',
     text: 'Opportunities for aspiring tech professionals to gain hands-on experience and mentorship in a dynamic work environment.',
     icon: FaUserGraduate,
-    href: "/internships",
+    href: "/services",
   },
   {
     title: 'Workspaces',
     text: 'Modern, collaborative workspaces that inspire creativity and productivity, available for our team and partners.',
     icon: FaBuilding,
-    href: "/workspaces",
+    href: "/services",
   },
 ];

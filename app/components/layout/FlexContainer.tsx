@@ -29,7 +29,7 @@ const FlexContainer = ({
                     height={imageHeight}
                 />
             </figure>
-            <div className="lg:w-[55%]">
+            <div className="lg:w-[48%]">
                 <h1 className={`title ${titleColor}`}>{title}</h1>
                 <div className="py-6 w-[90%]">
                     {description.map((para, index) => (

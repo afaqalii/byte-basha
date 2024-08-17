@@ -27,7 +27,6 @@ const Footer = () => {
       </footer>
       <footer className="footer bg-black border-base-300 border-t px-5 py-4">
         <aside className="">
-          {/* <Image src={logo} alt="Byte Basha Logo" height={24} width={24} /> */}
           <p>
             Byte Basha.
             <br />
@@ -39,7 +38,7 @@ const Footer = () => {
             {socialMedia.map((social, index) => {
               const Icon = social.icon;
               return (
-                <a key={index}>
+                <a href={social.href} target="_blank" key={index}>
                   <Icon size={24} className="fill-current" />
                 </a>
               );
