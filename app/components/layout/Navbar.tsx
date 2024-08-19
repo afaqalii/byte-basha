@@ -50,6 +50,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
+              onClick={() => setIsOpen(false)}
               className={`${pathname === item.href ? 'text-yellowLight' : ''} text-gray-700 hover:text-yellowLight duration-150 block px-3 py-2 rounded-md text-base font-medium`}
             >
               {item.text}
