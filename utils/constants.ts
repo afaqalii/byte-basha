@@ -4,9 +4,8 @@ import { FaThreads, FaMedium } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import { FaUpwork } from "react-icons/fa6";
 import { SiFiverr } from "react-icons/si";
-import { FaUserTie, FaShieldAlt, FaLightbulb, FaHandsHelping, FaSeedling } from 'react-icons/fa';
-import { FaCode, FaShoppingCart, FaChalkboardTeacher, FaUserGraduate, FaBuilding } from 'react-icons/fa';
-
+import { FaUserTie, FaShieldAlt, FaLightbulb, FaHandsHelping } from 'react-icons/fa';
+import { FaCode, FaShoppingCart, FaRobot, FaMobileAlt, FaBullhorn } from 'react-icons/fa';
 // images
 import webdev from "@/public/assets/webdev.jpg"
 import ai from "@/public/assets/ai.jpg"
@@ -20,6 +19,7 @@ import training from "@/public/assets/training.png"
 
 export const servicesData = [
   {
+    id: "webdev",
     imageSrc: webdev,
     imageAlt: "Web Development",
     imageWidth: 1200,
@@ -35,6 +35,7 @@ export const servicesData = [
     ],
   },
   {
+    id: "wp",
     imageSrc: wp,
     imageAlt: "WordPress Development",
     imageWidth: 1200,
@@ -47,6 +48,7 @@ export const servicesData = [
     reverse: true,
   },
   {
+    id: "ecommerce",
     imageSrc: ecommerce,
     imageAlt: "E-commerce Solutions",
     imageWidth: 1200,
@@ -60,6 +62,7 @@ export const servicesData = [
     ],
   },
   {
+    id: "ai",
     imageSrc: ai,
     imageAlt: "Artificial Intelligence",
     imageWidth: 1200,
@@ -72,6 +75,7 @@ export const servicesData = [
     reverse: true,
   },
   {
+    id: "appdev",
     imageSrc: appdev,
     imageAlt: "App Development",
     imageWidth: 1200,
@@ -83,6 +87,7 @@ export const servicesData = [
     ],
   },
   {
+    id: "dm",
     imageSrc: dm,
     imageAlt: "Digital Marketing",
     imageWidth: 1200,
@@ -95,6 +100,7 @@ export const servicesData = [
     reverse: true,
   },
   {
+    id: "internship",
     imageSrc: internship,
     imageAlt: "Internship",
     imageWidth: 1200,
@@ -105,6 +111,7 @@ export const servicesData = [
     ],
   },
   {
+    id: "workspace",
     imageSrc: workspace,
     imageAlt: "Workspaces",
     imageWidth: 1200,
@@ -116,6 +123,7 @@ export const servicesData = [
     reverse: true,
   },
   {
+    id: "training",
     imageSrc: training,
     imageAlt: "Training",
     imageWidth: 1200,
@@ -292,28 +300,39 @@ export const servicesTabsArray = [
 
 export const services = [
   {
+
     text: "Web Development",
-    href: "/services"
+    href: "/services#webdev"
+  },
+  {
+
+    text: "WordPress Development",
+    href: "/services#wp"
+  },
+  {
+
+    text: "E-commerce Solutions",
+    href: "/services#ecommerce"
   },
   {
     text: "App Development",
-    href: "/services"
+    href: "/services#appdev"
   },
   {
     text: "Artificial Intelligence",
-    href: "/services"
+    href: "/services#ai"
   },
   {
     text: "Digital Marketing",
-    href: "/services"
+    href: "/services#dm"
   },
   {
     text: "Internships",
-    href: "/internships"
+    href: "/services#internship"
   },
   {
     text: "Workspaces",
-    href: "/workspaces"
+    href: "/services#workspace"
   },
 ];
 
@@ -355,33 +374,33 @@ export const featuresArray = [
 
 export const servicesArray = [
   {
-    title: 'Software Services',
-    text: 'Custom software development, data science, and web development tailored to meet your business needs.',
+    title: "Web Development",
+    text: "Transform your digital presence with our comprehensive web development solutions. We offer end-to-end services tailored to meet your specific needs.",
     icon: FaCode,
-    href: "/services",
+    href: "/services#webdev",
   },
   {
-    title: 'E-commerce Solutions',
-    text: 'End-to-end e-commerce platforms that enhance your online presence and drive sales.',
+    title: "Mobile Application Development",
+    text: "Unlock the potential of your business with our cutting-edge app development services. We create high-performance, user-centric mobile applications for both iOS and Android platforms.",
+    icon: FaMobileAlt,
+    href: "/services#appdev",
+  },
+  {
+    title: "E-commerce Solutions",
+    text: "Expand your business online with our e-commerce solutions. We create secure, user-friendly online stores that are designed to enhance the customer experience and drive sales.",
     icon: FaShoppingCart,
-    href: "/services",
+    href: "/services#ecommerce",
   },
   {
-    title: 'Tech Skill Training',
-    text: 'Comprehensive training programs in the latest technologies, designed to equip individuals with the skills needed for success in the tech industry.',
-    icon: FaChalkboardTeacher,
-    href: "/services",
+    title: "Artificial Intelligence",
+    text: "Unlock the potential of artificial intelligence in your business with our AI services, including machine learning and data analysis.",
+    icon: FaRobot,
+    href: "/services#ai",
   },
   {
-    title: 'Internships',
-    text: 'Opportunities for aspiring tech professionals to gain hands-on experience and mentorship in a dynamic work environment.',
-    icon: FaUserGraduate,
-    href: "/services",
-  },
-  {
-    title: 'Workspaces',
-    text: 'Modern, collaborative workspaces that inspire creativity and productivity, available for our team and partners.',
-    icon: FaBuilding,
-    href: "/services",
+    title: "Digital Marketing",
+    text: "Boost your online presence with our comprehensive digital marketing services, tailored to your specific needs.",
+    icon: FaBullhorn,
+    href: "/services#dm",
   },
 ];

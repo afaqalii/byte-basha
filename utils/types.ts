@@ -64,6 +64,7 @@ export interface ServicesCarouselProps {
 
 // interface for flexContainer props
 export interface FlexContainerProps {
+    id?: string;
     imageSrc: StaticImageData;
     imageAlt: string;
     imageWidth: number;

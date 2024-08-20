@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { fadeInUp } from '@/utils/animation';
 
 const FlexContainer = ({
+    id,
     imageSrc,
     imageAlt,
     imageWidth,
@@ -18,6 +19,7 @@ const FlexContainer = ({
 }: FlexContainerProps) => {
     return (
         <motion.div
+            id={id}
             {...fadeInUp}
             className={`flex items-center justify-between flex-col lg:flex-row py-20 ${reverse ? 'flex-col-reverse lg:flex-row-reverse' : ''}`}
         >

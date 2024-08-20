@@ -12,6 +12,7 @@ const Services = () => {
             <Title className="mb-10">Services We Offer</Title>
             {servicesData.map((service, index) => (
                 <FlexContainer
+                    id={service.id}
                     key={index}
                     imageSrc={service.imageSrc}
                     imageAlt={service.imageAlt}
